@@ -1,0 +1,98 @@
+/* 
+Theme Name: Danske Site
+Theme URL: https://danske.site/
+Description: Danske Site
+Author: Mr last
+Author URI: http://mrlast.com
+Template: twentytwentyone 
+Version: 1.0.0 
+Text Domain: twentytwentyone-child
+
+*/
+
+
+
+.right-sidebar {
+	margin-top: calc(6 * var(--global--spacing-vertical));
+	padding-bottom: calc(var(--global--spacing-vertical) / 3);
+	color: var(--footer--color-text);
+	font-size: var(--footer--font-size);
+	font-family: var(--footer--font-family);
+}
+@media only screen and (min-width: 652px) {
+
+	.right-sidebar {
+		/* display: grid; */
+		/* grid-template-columns: repeat(2, 1fr); */
+		column-gap: calc(2 * var(--global--spacing-horizontal));
+	}
+}
+@media only screen and (min-width: 1024px) {
+
+	.right-sidebar {
+		/* grid-template-columns: repeat(3, 1fr); */
+	}
+}
+@media only screen and (max-width: 481px) {
+
+	.right-sidebar {
+		margin-top: calc(3 * var(--global--spacing-vertical));
+	}
+}
+
+.right-sidebar ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.right-sidebar ul li {
+	line-height: var(--widget--line-height-list);
+}
+
+.right-sidebar ul.sub-menu,
+.right-sidebar ul.children {
+	margin-left: var(--widget--spacing-menu);
+}
+
+.right-sidebar ul .sub-menu-toggle {
+	display: none;
+}
+
+.right-sidebar a {
+	color: var(--footer--color-link);
+	text-decoration: underline;
+	text-decoration-style: solid;
+	text-decoration-color: currentColor;
+}
+
+.right-sidebar a:link,
+.right-sidebar a:visited,
+.right-sidebar a:active {
+	color: var(--footer--color-link);
+}
+
+.right-sidebar a:hover {
+	color: var(--footer--color-link-hover);
+	text-decoration-style: dotted;
+}
+
+.right-sidebar .wp-block-social-links.alignright {
+	margin-top: var(--global--spacing-vertical);
+	justify-content: flex-end;
+}
+
+.right-sidebar .wp-block-social-links.alignleft {
+	margin-top: var(--global--spacing-vertical);
+}
+
+.right-sidebar:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.widget-title {
+	font-size: var(--global--font-size-sm);
+	font-weight: var(--widget--font-weight-title);
+	line-height: var(--widget--line-height-title);
+}
