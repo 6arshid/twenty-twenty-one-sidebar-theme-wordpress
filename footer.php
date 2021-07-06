@@ -66,7 +66,7 @@
 				printf(
 					
 					
-					'<a href="' . esc_url( __( 'https://danskesite.com/', 'twentytwentyone' ) ) . '">DanskeSite</a>'
+					'<a href="' . esc_url( __( 'https://danske.site/', 'twentytwentyone' ) ) . '">DanskeSite</a>'
 				);
 				?>
 			</div><!-- .powered-by -->
